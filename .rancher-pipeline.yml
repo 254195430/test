@@ -1,0 +1,16 @@
+stages:
+- name: install
+  steps:
+  - publishImageConfig:
+      dockerfilePath: ./Dockerfile
+      buildContext: .
+      tag: tes
+- name: dockerfile
+  steps:
+  - applyAppConfig:
+      catalogTemplate: cattle-global-data:helm-chronograf
+      version: 1.0.1
+      name: trgfdgf
+      targetNamespace: test1
+timeout: 60
+notification: {}
