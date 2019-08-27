@@ -1,0 +1,8 @@
+Traceback (most recent call last):
+  File "app.py", line 30, in <module>
+    app.run(host='0.0.0.0',port=5000,debug=True)
+  File "/root/env/lib/python3.5/site-packages/flask/app.py", line 772, in run
+    run_simple(host, port, self, **options)
+  File "/root/env/lib/python3.5/site-packages/werkzeug/serving.py", line 987, in run_simple
+    s.bind(server_address)
+OSError: [Errno 98] Address already in use
