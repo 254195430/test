@@ -1,5 +1,5 @@
 # Importing modules
-from flask import Flask, flash, render_template, flash, request, jsonify, redirect, session
+from flask import Flask, flash, render_template, flash, request, jsonify, redirect, session, escape
 from flask import abort
 import bcrypt
 from flask_cors import CORS, cross_origin
